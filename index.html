@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Temperature Converter</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/9816/9816946.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+
+    <p>Enter the temperature in degrees Celsius (°C) in the box below, then click the Convert button to get the result in Fahrenheit (°F).</p>
+
+    <label for="celsius">Celsius (°C):</label>
+    <textarea id="celsius"></textarea>
+
+    <div>
+        <button onclick="convertToFahrenheit()">Convert</button>
+        <button onclick="resetFields()">Reset</button>
+        <button onclick="reverseConversion()">Reverse</button>
+    </div>
+
+    <label for="fahrenheit">Fahrenheit (°F):</label>
+    <textarea id="fahrenheit"></textarea>
+
+    <label for="calculation">Calculation:</label>
+    <textarea id="calculation" readonly></textarea>
+
+    <a href="index2.html">Fahrenheit to Celsius</a>
+
+    <div class="formula">
+        <h2>How to Convert from Celsius (°C) to Fahrenheit (°F)</h2>
+        <p>Temperature <em>S</em> in degrees Fahrenheit (°F) is equal to temperature <em>S</em> in degrees Celsius (°C) times <strong>9/5</strong> plus <strong>32</strong>.</p>
+        <p><strong>S(°F) = (S(°C) × 9/5) + 32</strong></p>
+        <p>or</p>
+        <p><strong>S(°F) = (S(°C) × 1.8) + 32</strong></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
